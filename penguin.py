@@ -5,7 +5,7 @@ import seaborn as sns
 
 # PASSWORD PROTECTED
 password = st.text_input("Enter the password:")
-if password != "Werfen":
+if password != st.secrets("password"):
     st.stop()
 
 # RESIZE THE PAGE WIDTH AND SET THE TITLE
