@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # PASSWORD PROTECTED
-password = st.text_input("Enter the password:")
+password = st.text_input("Enter the password:", type="password")
 if password != st.secrets["password"]:
     st.stop()
 
